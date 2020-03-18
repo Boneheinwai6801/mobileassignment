@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+
+            <EditText
+                android:id="@+id/txtfoodname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Food Name"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/txtgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Food Group"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/txtdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Date"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/txttype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Meal type"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/txtnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Note"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Note"
+                android:inputType="Name" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnadd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:textAllCaps="false"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_blue_gray"
+                android:text="Add"
+                android:textColor="@color/pearlwhite"
+                android:padding="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btncancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:textAllCaps="false"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_blue_gray"
+                android:text="Cancel"
+                android:textColor="@color/pearlwhite"
+                android:padding="15dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
